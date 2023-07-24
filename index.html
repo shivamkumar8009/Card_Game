@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card War Game</title>
+    <link rel="stylesheet" href="styleCardGame.css">
+</head>
+
+<body>
+    <h1 id="header">&hearts;&spades;Card War Game&diams;&clubs;</h1>
+    <section id="container">
+        <div></div>
+        <div>
+            <div class="player">Dealer</div>
+            <div class="score" id="dealerScore"></div>
+            <div class="card">
+                <div class="card-image">
+                    <div class="card-corner-image"><br>
+                        <label class="cardNum" id="dealerCardNum"></label>
+                        <label class="char" id="dealerChar"></label>
+                    </div>
+                    <div class="card-center-image">
+                        <label id="dealerBigChar" class="bigChar"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="winPointer">
+            <label><b>Win</b></label>
+            <div class="pointer" id="pointer"></div>
+        </div>
+        <div>
+            <div class="player">User</div>
+            <div class="score" id="userScore"></div>
+            <div class="card">
+                <div class="card-image">
+                    <div class="card-corner-image"><br>
+                        <label class="cardNum" id="userCardNum"></label>
+                        <label class="char" id="userChar"></label>
+                    </div>
+                    <div class="card-center-image">
+                        <label id="userBigChar" class="bigChar"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <div>
+        <button id="mainBtn" onclick="drawCards();">Draw</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="resetBtn" onclick="location.reload();">Reset</button>
+    </div>
+    <section>
+        <div></div>
+        <div class="turns" id="dealerTurns"></div>
+        <div></div>
+        <div class="turns" id="userTurns"></div>
+        <div></div>
+    </section>
+    <div id="copyRight">Shivam Kumar © 2023</div>
+</body>
+<script src="scriptCardGame.js"></script>
+
+</html>
